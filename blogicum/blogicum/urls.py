@@ -25,7 +25,7 @@ handler404 = 'pages.views.page_not_found'
 handler500 = 'pages.views.server_failure'
 
 urlpatterns = [
-    path('', include('blog.urls')),
+    path('', include('blog.urls'), name='blog'),
     path('pages/', include('pages.urls')),
     path('admin/', admin.site.urls),
     path(
